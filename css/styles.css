@@ -1,0 +1,174 @@
+/* fonts     font-family: monospace;
+    font-family: 'Droid Sans Mono', monospace;
+    font-family: 'Fredoka One', cursive; */
+/* color palette: F05D5E, FFD275, 160F29, A5FFD6, FFA69E */
+
+.page {
+    width: 80%;
+    margin: 60px auto;
+    background:white;
+    padding: 60px;
+    -webkit-box-sizing: border-box;
+    /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box;
+    /* <=28 */
+    box-sizing: border-box;
+}
+.page p {
+    font-style: 12px;
+    margin: 20px 0 0 0;
+    line-height: 1.35em;
+    color: #333;
+}
+
+
+.container{
+    /*padding: 100px;*/
+    width: 1000px;
+    height: 650px;
+}
+
+#arrow {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border: 0;
+    outline: 0;
+    z-index: 100;
+    color: #BBB;
+    background: transparent;
+    -moz-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+    font: 36px Heiti, 'Lucida Grande', Arial;
+    font-weight: bold;
+}
+#arrow span {
+    display: inline-block;
+    position: relative;
+    top: -18px;
+    -moz-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+#arrow:hover {
+    background: #EC008C;
+}
+#arrow:hover span {
+    top: 0;
+    color: #FFF;
+}
+
+.container-right{
+    float: right;
+    height: 100%;
+    width: 60%;
+}
+.container-left{
+    float: left;
+    height: 100%;
+    width: 40%;
+
+}
+.container-left h1{
+    margin-top: 20%;
+}
+
+.container-left p{
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.blurb{
+    width: 50%;
+    display: inline-block;
+}
+.blurb p{
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section{
+    text-align: center;
+}
+
+h1{
+    font-size: 90px;
+    color: hotpink;
+    font-family: 'Fredoka One', cursive;
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.speech-bubble{
+    background-image: url(/assets/speechbubble.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 900px;
+    height: 600px;
+    margin-top: 30px;
+}
+
+.bubble-container{
+    width: 600px;
+    height: 60%;
+    margin-left: 60px;
+    vertical-align: middle;
+    padding-top: 50px;
+}
+.bubble-container p{
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+
+}
+
+.person-r{
+    width: 40%;
+    top: 40px; 
+    float: right;
+    margin-right: 20%;
+}
+.person-l{
+    float: left;
+    width: 40%;
+    top: 40px;
+    margin-left: 20%;
+    
+}
+
+.blurb{
+    width: 50%;
+    padding-left: 30px;
+}
+.blurb p{
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*p5 */
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+
+.quotes {display: none;}
