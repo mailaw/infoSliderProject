@@ -2,238 +2,234 @@
     font-family: 'Droid Sans Mono', monospace;
     font-family: 'Fredoka One', cursive; */
 /* color palette: F05D5E, FFD275, 160F29, A5FFD6, FFA69E */
-.inner-page{
-    width: 80%;
-    display: block;
-    margin: auto;
+.inner-page {
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 .page {
-    width: 30%;
-    margin: 60px auto;
-    padding: 60px;
-    background: white;
+  width: 30%;
+  margin: 60px auto;
+  padding: 60px;
+  background: white;
 
-    -webkit-box-sizing: border-box;
-    /* Safari<=5 Android<=3 */
-    -moz-box-sizing: border-box;
-    /* <=28 */
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* Safari<=5 Android<=3 */
+  -moz-box-sizing: border-box;
+  /* <=28 */
+  box-sizing: border-box;
 }
 .page p {
-    font-style: 12px;
-    margin: 20px 0 0 0;
-    line-height: 1.35em;
-    color: #333;
+  font-style: 12px;
+  margin: 20px 0 0 0;
+  line-height: 1.35em;
+  color: #333;
 }
 
-
-.container{
-    /*padding: 100px;*/
-    width: 1000px;
-    height: 650px;
+.container {
+  /*padding: 100px;*/
+  width: 1000px;
+  height: 650px;
 }
 
 #arrow {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    cursor: pointer;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border: 0;
-    outline: 0;
-    z-index: 100;
-    color: #BBB;
-    background: transparent;
-    -moz-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
-    -o-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
-    -webkit-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
-    transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
-    font: 36px Heiti, 'Lucida Grande', Arial;
-    font-weight: bold;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: 0;
+  outline: 0;
+  z-index: 100;
+  color: #bbb;
+  background: transparent;
+  -moz-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+  -o-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+  -webkit-transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+  transition: all 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
+  font: 36px Heiti, "Lucida Grande", Arial;
+  font-weight: bold;
 }
 #arrow span {
-    display: inline-block;
-    position: relative;
-    top: -18px;
-    -moz-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
-    -o-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
-    -webkit-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
-    transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+  display: inline-block;
+  position: relative;
+  top: -18px;
+  -moz-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+  -o-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
+  transition: all 0.7s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
 #arrow:hover {
-    background: #EC008C;
+  background: #ec008c;
 }
 #arrow:hover span {
-    top: 0;
-    color: #FFF;
+  top: 0;
+  color: #fff;
 }
 
-.container-right{
-    float: right;
-    height: 100%;
-    width: 60%;
+.container-right {
+  float: right;
+  height: 100%;
+  width: 60%;
 }
-.container-left{
-    float: left;
-    height: 100%;
-    width: 40%;
+.container-left {
+  float: left;
+  height: 100%;
+  width: 40%;
 }
-.container-left h1{
-    margin-top: 20%;
-}
-
-.container-left p{
-    font-family: 'Fredoka One', cursive;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20%;
+.container-left h1 {
+  margin-top: 20%;
 }
 
-.blurb{
-    width: 50%;
-    height: 200px;
-    display: inline-block;
-}
-.blurb p{
-    font-family: 'Fredoka One', cursive;
-    font-size: 20px;
-    text-align: center;
+.container-left p {
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20%;
 }
 
-.section{
-    text-align: center;
+.blurb {
+  width: 50%;
+  height: 200px;
+  display: inline-block;
+}
+.blurb p {
+  font-family: "Fredoka One", cursive;
+  font-size: 20px;
+  text-align: center;
 }
 
-h1{
-    font-size: 65px;
-    color: hotpink;
-    font-family: 'Fredoka One', cursive;
-    
+.section {
+  text-align: center;
 }
 
-.pp-scrollable{
-    height: 100%;
-    overflow-y: scroll;
-}
-h2{
-    font-size: 40px;
-    color: #160F29;
-    font-family: 'Droid Sans Mono', monospace;
-}
-h3{
-    font-size: 38px;
-    color: white;
-    font-family: 'Droid Sans Mono', monospace;
-    text-align: center;
-}
-ul{
-    list-style: none;
+h1 {
+  font-size: 65px;
+  color: hotpink;
+  font-family: "Fredoka One", cursive;
 }
 
-body{
-    padding: 0;
-    margin: 0;
+.pp-scrollable {
+  height: 100%;
+  overflow-y: scroll;
+}
+h2 {
+  font-size: 40px;
+  color: #160f29;
+  font-family: "Droid Sans Mono", monospace;
+}
+h3 {
+  font-size: 38px;
+  color: white;
+  font-family: "Droid Sans Mono", monospace;
+  text-align: center;
+}
+ul {
+  list-style: none;
 }
 
-.speech-bubble{
-    background-image: url('http://mailiislaw.com/mj487/infoslider/assets/speechbubble_min.png');
-    background-repeat: no-repeat;
-    background-size: 67%;
-    width: 88%;
-    height: auto;
-    margin-top: 30px;
-    margin-left: 30px;
-    padding: 0px;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.bubble-container{
-    width: 60%;
-    height: 340px;
-    vertical-align: middle;
-    margin: 30px;
-    text-align: center;
-    padding: 90px 0;
-}
-.bubble-container p{
-    font-family: inherit;
-    font-size: 2.0em;
-    color: white;
+.speech-bubble {
+  background-image: url("assets/speechbubble_min.png");
+  background-repeat: no-repeat;
+  background-size: 67%;
+  width: 88%;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 0px;
 }
 
-.person-r{
-    width: 22%;
-    float: right;
-    margin-right:17%;
+.bubble-container {
+  width: 60%;
+  height: 340px;
+  vertical-align: middle;
+  margin: 30px;
+  text-align: center;
+  padding: 90px 0;
 }
-.person-l{
-    margin-top: 39%;
-    float: left;
-    width: 50%;
-    margin-left: 40%;
-    
+.bubble-container p {
+  font-family: inherit;
+  font-size: 2em;
+  color: white;
 }
-.container-r{
-    width: 40%;
-    float: right;
-    margin-right: 7%;
+
+.person-r {
+  width: 22%;
+  float: right;
+  margin-right: 17%;
 }
-.zoom{
-    position: relative;
-    display: block;
-    margin-left: 30px;
-    
+.person-l {
+  margin-top: 39%;
+  float: left;
+  width: 50%;
+  margin-left: 40%;
 }
-.brain{
-    float: left;
-    width: 50%;
+.container-r {
+  width: 40%;
+  float: right;
+  margin-right: 7%;
 }
-.zoom h1{
-    color: white;
-    font-size: 50px;
-    padding: 30px;
+.zoom {
+  position: relative;
+  display: block;
+  margin-left: 30px;
 }
-.zoom h2{
-    font-size: 20px;
-    color: #A5FFD6;
-    padding: 10px;
-    font-family: monospace;
+.brain {
+  float: left;
+  width: 50%;
 }
-.zoom h3{
-    color: #FFD275;
-    font-size: 20px;
-    padding: 10px;
-    font-family: monospace;
+.zoom h1 {
+  color: white;
+  font-size: 50px;
+  padding: 30px;
 }
-.zoom h4{
-    color: #160F29;
-    font-size: 20px;
-    padding: 20px;
-    font-family: monospace;
-    line-height: 1.2em;
+.zoom h2 {
+  font-size: 20px;
+  color: #a5ffd6;
+  padding: 10px;
+  font-family: monospace;
 }
-.zoom h5{
-    color: white;
-    font-size: 30px;
-    padding: 30px;
-    font-family: 'Fredoka One', cursive;
+.zoom h3 {
+  color: #ffd275;
+  font-size: 20px;
+  padding: 10px;
+  font-family: monospace;
 }
-.zoom h6{
-    color: white;
-    font-size: 20px;
-    padding-left: 0px;
-    font-family: monospace;
+.zoom h4 {
+  color: #160f29;
+  font-size: 20px;
+  padding: 20px;
+  font-family: monospace;
+  line-height: 1.2em;
 }
-#section4 h2{
-    font-size: 40px;
-    color: white;
-    font-family: 'Droid Sans Mono', monospace;
-    text-align: center;
+.zoom h5 {
+  color: white;
+  font-size: 30px;
+  padding: 30px;
+  font-family: "Fredoka One", cursive;
 }
-#section4{
-    padding: 80px;
-    margin: 60px auto;
+.zoom h6 {
+  color: white;
+  font-size: 20px;
+  padding-left: 0px;
+  font-family: monospace;
+}
+#section4 h2 {
+  font-size: 40px;
+  color: white;
+  font-family: "Droid Sans Mono", monospace;
+  text-align: center;
+}
+#section4 {
+  padding: 80px;
+  margin: 60px auto;
 }
 
 /*#section4 h2{
@@ -245,73 +241,69 @@ body{
 }
 */
 
-#section6{
-    padding: 80px;
-    margin: 60px auto;
+#section6 {
+  padding: 80px;
+  margin: 60px auto;
 }
-#sources h3{
-    padding: 10px;
-    font-size: 1.0em;
+#sources h3 {
+  padding: 10px;
+  font-size: 1em;
 }
-#sources h2{
-    font-size: 2em;
+#sources h2 {
+  font-size: 2em;
 }
-#sources a{
-    font-size: 1.0em;
-    margin-bottom: .5em;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.8;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-
-#section5{
-    padding: 60px;
+#sources a {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.8;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
 }
 
-#section5 h2{
-    padding: 20px;
-}
-#section5 h4{
-    padding: 20px;
-    width: 80%;
-    display: block;
-    margin: auto;
+#section5 {
+  padding: 60px;
 }
 
-#section5 .right{
-    float: right;
-    height: 100%;
-    width: 50%;
+#section5 h2 {
+  padding: 20px;
 }
-#section5 .left{
-    float: left;
-    height: 100%;
-    width: 50%;
-    
+#section5 h4 {
+  padding: 20px;
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 
-#section5 .row{
-    padding: 0px;
-    
+#section5 .right {
+  float: right;
+  height: 100%;
+  width: 50%;
 }
-#section6 h3{
-    font-size: 1em;
-    padding: 10px;
-    text-align: left;
-}
-
-
-#Content{
-    width: 50%;
-    float: right;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin-top: 80px;
+#section5 .left {
+  float: left;
+  height: 100%;
+  width: 50%;
 }
 
+#section5 .row {
+  padding: 0px;
+}
+#section6 h3 {
+  font-size: 1em;
+  padding: 10px;
+  text-align: left;
+}
+
+#Content {
+  width: 50%;
+  float: right;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-top: 80px;
+}
 
 /*p5 */
 
@@ -324,24 +316,21 @@ canvas {
 
 /**this is for language bubble carousel */
 
-
-.fadeOut{
+.fadeOut {
   visibility: hidden;
-  opacity: 0; 
- -webkit-transition: all 1s ease-out;
-       -moz-transition: all 1s ease-out;
-        -ms-transition: all 1s ease-out;
-         -o-transition: all 1s ease-out;
-            transition: all 1s ease-out;
-  transform: translate(0,-50px);
-  -webkit-transform: translate(0,-50px);
-  -o-transform: translate(0,-50px); 
-  -moz-transform: translate(0,-50px);
+  opacity: 0;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transform: translate(0, -50px);
+  -webkit-transform: translate(0, -50px);
+  -o-transform: translate(0, -50px);
+  -moz-transform: translate(0, -50px);
 }
 
-
 /*fade animation */
-
 
 .fade-text h4 {
   animation: fadein 4s;

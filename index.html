@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -8,23 +9,24 @@
 
     <title>Your Brain on Language</title>
 
-    
+
     <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" rel="stylesheet">
-    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/jquery.quiz.css" rel="stylesheet">  
+    <link href="css/jquery.quiz.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Fredoka+One|VT323" rel="stylesheet">
-    
-      
+
+
     <!--p5.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.15/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.15/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.15/addons/p5.sound.min.js"></script>
     <!--carousel -->
     <script src="js/speech.js"></script>
-      <!--script> 
+    <!--script> 
             var words = ["你好！你好嗎？", "Tere! Kuidas sul läheb?", "مرحبا! كيف حالك؟!","Salut! Comment allez-vous?"];
             var i = 0;
             var text = "This text cha=nges";
@@ -46,41 +48,39 @@
       </script-->
 
     <!--source of slider https://github.com/alvarotrigo/pagePiling.js#pagepilingjs-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.css.map"/>
-      
-  </head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.css.map" />
 
-  <body>
+</head>
+
+<body>
 
     <!--div id="p5_loading" class="loadingclass">this could be some sweet graphics loading lots of bits.</div-->
-    <button id="arrow">	<span>↓</span></button>  
+    <button id="arrow"> <span>↓</span></button>
     <div id="pagepiling">
         <!--HOME-->
         <div class="section" id="home">
             <h1>Your Brain on Language</h1>
         </div>
-         <div class="section" id="section1">
-             <h1>How does the brain process
-                 <span
-                    class="txt-rotate"
-                    data-period="2000"
-                    data-rotate='[ "language???", "language???"]'></span>
-             </h1>
+        <div class="section" id="section1">
+            <h1>How does the brain process
+                <span class="txt-rotate" data-period="2000" data-rotate='[ "language???", "language???"]'></span>
+            </h1>
         </div>
-        
+
         <div class="section" id="section2">
             <div class="row">
                 <div class="col-md-4">
-            <!--div class="container-left "-->
+                    <!--div class="container-left "-->
                     <div class="blurb">
-                        <p>When someone says something, 
-                        how do we make sense of the sound waves we receive?</p></div>
-                    <img class="person-l" src="http://mailiislaw.com/mj487/infoS/assets/woman_smile1.png">
-            <!--/div-->
+                        <p>When someone says something,
+                            how do we make sense of the sound waves we receive?</p>
+                    </div>
+                    <img class="person-l" src="assets/woman_smile1.png">
+                    <!--/div-->
                 </div>
-            <!--div class="container-right"-->
+                <!--div class="container-right"-->
                 <div class="col-md-8">
                     <div class="speech-bubble">
                         <div class="bubble-container">
@@ -91,69 +91,121 @@
                         </div>
                     </div>
                     <img class="person-r" src="assets/person_gif.gif">
-                </div> 
+                </div>
             </div>
         </div>
-        
-      
-        
+
+
+
         <div class="section" id="section3">
             <div class="zoom">
                 <!--a href="#" id="brain"-->
-                <img class="brain" src="http://mailiislaw.com/mj487/infoS/assets/woman_smile.png" onmouseover="this.src='http://mailiislaw.com/mj487/infoslider/assets/woman_smile2.png'" onmouseout="this.src='http://mailiislaw.com/mj487/infoslider/assets/woman_smile.png'" />
+                <img class="brain" src="assets/woman_smile.png" onmouseover="this.src='assets/woman_smile2.png'"
+                    onmouseout="this.src='assets/woman_smile.png'" />
                 <div id="Content">
-                       <div id='text1'><h1>Sound enters the brain...</h1>
+                    <div id='text1'>
+                        <h1>Sound enters the brain...</h1>
                         <h6>Hover over her! </h6>
-                        <h4>First, sound goes in the auditory cortex and the sounds making up part of speech take a special pathway to Broca’s area in the Inferior frontal guys and Wernicke’s area in the superior temporal gyrus. </h4>
+                        <h4>First, sound goes in the auditory cortex and the sounds making up part of speech take a
+                            special pathway to Broca’s area in the Inferior frontal guys and Wernicke’s area in the
+                            superior temporal gyrus. </h4>
                         <h2>Broca's Area of the brain is used for speech production and articulation. </h2>
-                        <h3>Wernicke's Area of the brain is used for comprehension</h3></div>
-                       <div id='text2' style='display:none;'><h1>Processing begins...</h1>
-                        <h4>The brain breaks up the sentence into different parts and different regions in the brain recognize consonants and tone.</h4>
-                        <h4>Semantics and syntax are handled by Wernicke’s area, which also handles speech, motion and face processing. This suggests that people who have developed these areas of the brain by speaking multiple languages are better at processing these tasks associated with the same area. Broca’s area is associated with comprehension and keeps track of certain words in short term memory.</h4></div>
+                        <h3>Wernicke's Area of the brain is used for comprehension</h3>
+                    </div>
+                    <div id='text2' style='display:none;'>
+                        <h1>Processing begins...</h1>
+                        <h4>The brain breaks up the sentence into different parts and different regions in the brain
+                            recognize consonants and tone.</h4>
+                        <h4>Semantics and syntax are handled by Wernicke’s area, which also handles speech, motion and
+                            face processing. This suggests that people who have developed these areas of the brain by
+                            speaking multiple languages are better at processing these tasks associated with the same
+                            area. Broca’s area is associated with comprehension and keeps track of certain words in
+                            short term memory.</h4>
+                    </div>
                 </div>
-                <a id='changeText'><h5>Click here for more</h5></a>
-            </div> 
-        </div>
-        
-        
-        <div class="section" id="section4">
-            <h1>What happens to the brain with learning of languages?</h1>
-            <h2>Multilingualism has been shown to correlate with neural growth, forming connections all around the brain for increased cognitive function and influence on perception, with the idea of linguistic relativity.</h2>
-        
+                <a id='changeText'>
+                    <h5>Click here for more</h5>
+                </a>
+            </div>
         </div>
 
-        <div class="section" id="section5"> 
+
+        <div class="section" id="section4">
+            <h1>What happens to the brain with learning of languages?</h1>
+            <h2>Multilingualism has been shown to correlate with neural growth, forming connections all around the
+                brain for increased cognitive function and influence on perception, with the idea of linguistic
+                relativity.</h2>
+
+        </div>
+
+        <div class="section" id="section5">
             <div class="left">
                 <h2>Neural Growth in the Brain</h2>
                 <div class="fade-text">
-                            <h4>"When we learn a language, we create new neural pathways in our brain, which can lead to noticeable changes. The left hemisphere is generally believed to be the logical part of the brain and is where many of our language skills originate. However, a 2012 Swiss study observed that learning a foreign language later in life is associated with thickening of the cerebral cortex — a layer of neurons specifically responsible for memory, thought, consciousness and, of course, language. This increased thickness can lead to better memory and sharper thinking later in life." <a href="https://languablog.com/2016/09/19/how-learning-a-new-language-changes-your-brain-and-your-perception/">-Languajob </a> </h4>
- 
-                            <h4>Specifically, the Dorsolateral Prefrontal Cortex is a part that shows growth in strength. This cortex plays a role in executive functions of the brain, meaning that it's growth makes the brain more healthy, complex, and actively engaged." </h4>
-                            
-                            <!--h4>"From studies of bilingual language switching and non-linguistic cognitive control...In order to facilitate information transfer between the hemispheres, it is also possible that prolonged bilingual experience alters anatomical structures in addition to cortical functional networks."<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3322418/">"Bilingualism: Consequences for Mind and Brain"</a> </h4-->
+                    <h4>"When we learn a language, we create new neural pathways in our brain, which can lead to
+                        noticeable changes. The left hemisphere is generally believed to be the logical part of the
+                        brain and is where many of our language skills originate. However, a 2012 Swiss study observed
+                        that learning a foreign language later in life is associated with thickening of the cerebral
+                        cortex — a layer of neurons specifically responsible for memory, thought, consciousness and, of
+                        course, language. This increased thickness can lead to better memory and sharper thinking later
+                        in life." <a href="https://languablog.com/2016/09/19/how-learning-a-new-language-changes-your-brain-and-your-perception/">-Languajob
+                        </a> </h4>
+
+                    <h4>Specifically, the Dorsolateral Prefrontal Cortex is a part that shows growth in strength. This
+                        cortex plays a role in executive functions of the brain, meaning that it's growth makes the
+                        brain more healthy, complex, and actively engaged." </h4>
+
+                    <!--h4>"From studies of bilingual language switching and non-linguistic cognitive control...In order to facilitate information transfer between the hemispheres, it is also possible that prolonged bilingual experience alters anatomical structures in addition to cortical functional networks."<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3322418/">"Bilingualism: Consequences for Mind and Brain"</a> </h4-->
                 </div>
             </div>
-                    
+
             <div class="right">
-                    <div class="fade-text">
-                            <h2>Linguistic Relativity</h2>
-                            <h4>Linguistic relativity is the idea that language, while not dictating thought, has an influence on perception. Languages, with their different vocabularies and grammatical structures  force us through particular perceptions. </h4>
-                             <h4> Examples: <ol><li>Japanese contains more words to describe blues than English does, and Japanese speakers are able to distinuguish more shades than English speakers. </li><li>Hebrew has gender markers while Finnish does not. Herbrew speaking children knew their own genders a year earlier than their Finnish counterparts</li><li>Italian speakers would say "the lamp broke itself" while English speakers would say "they broke the lamp," indicating that English speakers search for the source to blame, rather that it being a mere occurance.</li></ol></h4>
-                             <!--h4>Results in research about this subject "suggest that a second language can play an important unconscious role in framing perception, the authors conclude online this month in Psychological Science."<a href="http://www.sciencemag.org/news/2015/03/speaking-second-language-may-change-how-you-see-world">-Nicholas Weiler</a> </h4-->
-                    </div>
+                <div class="fade-text">
+                    <h2>Linguistic Relativity</h2>
+                    <h4>Linguistic relativity is the idea that language, while not dictating thought, has an influence
+                        on perception. Languages, with their different vocabularies and grammatical structures force us
+                        through particular perceptions. </h4>
+                    <h4> Examples: <ol>
+                            <li>Japanese contains more words to describe blues than English does, and Japanese speakers
+                                are able to distinuguish more shades than English speakers. </li>
+                            <li>Hebrew has gender markers while Finnish does not. Herbrew speaking children knew their
+                                own genders a year earlier than their Finnish counterparts</li>
+                            <li>Italian speakers would say "the lamp broke itself" while English speakers would say
+                                "they broke the lamp," indicating that English speakers search for the source to blame,
+                                rather that it being a mere occurance.</li>
+                        </ol>
+                    </h4>
+                    <!--h4>Results in research about this subject "suggest that a second language can play an important unconscious role in framing perception, the authors conclude online this month in Psychological Science."<a href="http://www.sciencemag.org/news/2015/03/speaking-second-language-may-change-how-you-see-world">-Nicholas Weiler</a> </h4-->
+                </div>
             </div>
         </div>
-        
+
         <div class="section" id="section6">
-            
+
             <h1>Benefits of Knowing Languages</h1>
             <div class="inner-page">
                 <ul>
-                    <li><h3>Brain growth leading to a higher density of the gray matter that contains most of your brain's neurons and synapses</h3></li>
-                    <li><h3> Better executive control--the set of cognitive skills based on limited cognitive resources for such functions as inhibition, switching attention, and working memory </h3></li>
-                    <li><h3>Increased attention and verbal/spational abilites</h3></li>
-                    <li><h3>Prevention against dementia and alzheimers</h3></li>
-                    <li><h3>Improved decision-making skills: According to a study from the University of Chicago, bilinguals tend to make more rational decisions. Any language contains nuance and subtle 		implications in its vocabulary, and these biases can subconsciously influence your judgment. Bilinguals showed more confidence in their choices after thinking it over in the second language and seeing whether their initial conclusions still stand up.</h3></li>
+                    <li>
+                        <h3>Brain growth leading to a higher density of the gray matter that contains most of your
+                            brain's neurons and synapses</h3>
+                    </li>
+                    <li>
+                        <h3> Better executive control--the set of cognitive skills based on limited cognitive resources
+                            for such functions as inhibition, switching attention, and working memory </h3>
+                    </li>
+                    <li>
+                        <h3>Increased attention and verbal/spational abilites</h3>
+                    </li>
+                    <li>
+                        <h3>Prevention against dementia and alzheimers</h3>
+                    </li>
+                    <li>
+                        <h3>Improved decision-making skills: According to a study from the University of Chicago,
+                            bilinguals tend to make more rational decisions. Any language contains nuance and subtle
+                            implications in its vocabulary, and these biases can subconsciously influence your
+                            judgment. Bilinguals showed more confidence in their choices after thinking it over in the
+                            second language and seeing whether their initial conclusions still stand up.</h3>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -179,11 +231,13 @@
             <h3>http://www.sciencemag.org/news/2015/03/speaking-second-language-may-change-how-you-see-world</h3>
             <h2>Additional Resources to start learning languages!</h2>
             <ul>
-                <li><a href="http://www.afsa.org/state-department-opportunities-students">US State Department Programs for Students</a></li>
+                <li><a href="http://www.afsa.org/state-department-opportunities-students">US State Department Programs
+                        for Students</a></li>
                 <li><a href="https://us.fulbrightonline.org/">Full Bright U.S. Student Program </a></li>
                 <li><a href="http://www.clscholarship.org/">Critical Language Scholarship</a></li>
-                <li><a href="https://www.duolingo.com/">Also check out Duolingo for free langugage learning in an effective app!</a></li>
-                
+                <li><a href="https://www.duolingo.com/">Also check out Duolingo for free langugage learning in an
+                        effective app!</a></li>
+
             </ul>
         </div>
     </div>
@@ -194,23 +248,25 @@
     <!--script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script-->
     <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
 
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <!--source of quiz https://github.com/jchamill/jquery-quiz-->
     <script src="js/jquery.quiz.js"></script>
-      
+
     <script src="js/scripts.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- others -->
-      
+
     <!--script src="../../assets/js/ie10-viewport-bug-workaround.js"></script-->
     <!--script src="js/sketch.js"></script-->
-      
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.js"></script>
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.js.map"></script-->
-      
-    
-      
-  </body>
+
+
+
+</body>
+
 </html>
