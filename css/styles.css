@@ -2,12 +2,17 @@
     font-family: 'Droid Sans Mono', monospace;
     font-family: 'Fredoka One', cursive; */
 /* color palette: F05D5E, FFD275, 160F29, A5FFD6, FFA69E */
-
-.page {
+.inner-page{
     width: 80%;
+    display: block;
+    margin: auto;
+}
+.page {
+    width: 30%;
     margin: 60px auto;
-    background:white;
     padding: 60px;
+    background: white;
+
     -webkit-box-sizing: border-box;
     /* Safari<=5 Android<=3 */
     -moz-box-sizing: border-box;
@@ -74,7 +79,6 @@
     float: left;
     height: 100%;
     width: 40%;
-
 }
 .container-left h1{
     margin-top: 20%;
@@ -89,11 +93,12 @@
 
 .blurb{
     width: 50%;
+    height: 200px;
     display: inline-block;
 }
 .blurb p{
     font-family: 'Fredoka One', cursive;
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -102,10 +107,29 @@
 }
 
 h1{
-    font-size: 90px;
+    font-size: 65px;
     color: hotpink;
     font-family: 'Fredoka One', cursive;
     
+}
+
+.pp-scrollable{
+    height: 100%;
+    overflow-y: scroll;
+}
+h2{
+    font-size: 40px;
+    color: #160F29;
+    font-family: 'Droid Sans Mono', monospace;
+}
+h3{
+    font-size: 38px;
+    color: white;
+    font-family: 'Droid Sans Mono', monospace;
+    text-align: center;
+}
+ul{
+    list-style: none;
 }
 
 body{
@@ -114,75 +138,181 @@ body{
 }
 
 .speech-bubble{
-    background-image: url(/assets/speechbubble.png);
+    background-image: url('http://mailiislaw.com/mj487/infoslider/assets/speechbubble_min.png');
     background-repeat: no-repeat;
-    background-size: 80%;
-    width: 900px;
-    height: 600px;
+    background-size: 67%;
+    width: 88%;
+    height: auto;
     margin-top: 30px;
+    margin-left: 30px;
+    padding: 0px;
 }
 
 .bubble-container{
-    width: 600px;
-    height: 60%;
-    margin-left: 60px;
+    width: 60%;
+    height: 340px;
     vertical-align: middle;
-    padding-top: 50px;
+    margin: 30px;
+    text-align: center;
+    padding: 90px 0;
 }
 .bubble-container p{
-    font-family: 'Droid Sans Mono', monospace;
-    font-size: 70px;
+    font-family: inherit;
+    font-size: 2.0em;
     color: white;
-    text-align: center;
-
 }
 
 .person-r{
-    width: 40%;
-    top: 40px; 
+    width: 22%;
     float: right;
-    margin-right: 14%;
+    margin-right:17%;
 }
 .person-l{
-    margin-top: 170px;
+    margin-top: 39%;
     float: left;
-    width: 60%;
-    margin-left: 20%;
+    width: 50%;
+    margin-left: 40%;
     
 }
-
+.container-r{
+    width: 40%;
+    float: right;
+    margin-right: 7%;
+}
 .zoom{
     position: relative;
     display: block;
     margin-left: 30px;
     
 }
-#brain img{
+.brain{
     float: left;
     width: 50%;
 }
-
+.zoom h1{
+    color: white;
+    font-size: 50px;
+    padding: 30px;
+}
 .zoom h2{
-    font-size: 40px;
-    color: 
+    font-size: 20px;
+    color: #A5FFD6;
+    padding: 10px;
+    font-family: monospace;
 }
-/*
-.zoom. img-top{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0px;
-    z-index: 99;
+.zoom h3{
+    color: #FFD275;
+    font-size: 20px;
+    padding: 10px;
+    font-family: monospace;
 }
-.zoom: hover .img-top {
-    display:inline;
-}*/
-
-h2{
-    font-size: 40px;
+.zoom h4{
     color: #160F29;
-    font-family: 'Droid Sans Mono', monospace;
+    font-size: 20px;
+    padding: 20px;
+    font-family: monospace;
+    line-height: 1.2em;
 }
+.zoom h5{
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    font-family: 'Fredoka One', cursive;
+}
+.zoom h6{
+    color: white;
+    font-size: 20px;
+    padding-left: 0px;
+    font-family: monospace;
+}
+#section4 h2{
+    font-size: 40px;
+    color: white;
+    font-family: 'Droid Sans Mono', monospace;
+    text-align: center;
+}
+#section4{
+    padding: 80px;
+    margin: 60px auto;
+}
+
+/*#section4 h2{
+    font-size: 30px;
+    padding-top: 20px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+*/
+
+#section6{
+    padding: 80px;
+    margin: 60px auto;
+}
+#sources h3{
+    padding: 10px;
+    font-size: 1.0em;
+}
+#sources h2{
+    font-size: 2em;
+}
+#sources a{
+    font-size: 1.0em;
+    margin-bottom: .5em;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.8;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#section5{
+    padding: 60px;
+}
+
+#section5 h2{
+    padding: 20px;
+}
+#section5 h4{
+    padding: 20px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#section5 .right{
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+#section5 .left{
+    float: left;
+    height: 100%;
+    width: 50%;
+    
+}
+
+#section5 .row{
+    padding: 0px;
+    
+}
+#section6 h3{
+    font-size: 1em;
+    padding: 10px;
+    text-align: left;
+}
+
+
+#Content{
+    width: 50%;
+    float: right;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 80px;
+}
+
+
 /*p5 */
 
 canvas {
@@ -192,7 +322,85 @@ canvas {
   z-index: -1;
 }
 
+/**this is for language bubble carousel */
 
-.quotes {display: none;}
+
+.fadeOut{
+  visibility: hidden;
+  opacity: 0; 
+ -webkit-transition: all 1s ease-out;
+       -moz-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+         -o-transition: all 1s ease-out;
+            transition: all 1s ease-out;
+  transform: translate(0,-50px);
+  -webkit-transform: translate(0,-50px);
+  -o-transform: translate(0,-50px); 
+  -moz-transform: translate(0,-50px);
+}
 
 
+/*fade animation */
+
+
+.fade-text h4 {
+  animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  /* Firefox */
+  -webkit-animation: fadein 4s;
+  /* Safari and Chrome */
+  -o-animation: fadein 4s;
+  padding: 0px;
+  font-size: 1em;
+}
+
+.fade-text h4:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.fade-text h4:nth-child(2) {
+  animation-delay: 6s;
+}
+
+.fade-text div:nth-child(3) {
+  animation-delay: 12s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
