@@ -136,7 +136,7 @@ body {
 }
 
 .speech-bubble {
-  background-image: url("assets/speechbubble_min.png");
+  background-image: url("../assets/speechbubble_min.png");
   background-repeat: no-repeat;
   background-size: 67%;
   width: 88%;
